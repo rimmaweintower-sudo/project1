@@ -46,7 +46,9 @@ body {
 }
 
 .header__icon {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 40px;
     min-width: 40px;
@@ -54,14 +56,20 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    background-color: white;
+    background-color: #FF3E79;
+    border-radius: 50%;
 }
 
 .header__icon--logo {
     min-height: 50.81px;
     min-width: 96.55px;
+    background-color: white;
 }
+.header-icon--pic {
+    height: 20px;
+    width: 20px;
 
+}
 .nav__item--hidden, .header__icon--call, .header__icon--chat, .header__icon--profile, .header__divider1, .header__icon-name_1, .header__icon-name_2, .info__text--desktop 
 { display: none;}
 
@@ -149,7 +157,7 @@ background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 
     justify-content: flex-start;
     align-items: center;
     border: none;
-    background-color: white;
+    background-color: #F8F8F8;
 }
 .expand-button__icon{
     height: 24px;

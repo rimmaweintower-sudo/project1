@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'TTLakes-Regular';   
+    src: url('fonts/TTLakes-Regular.woff') format('woff');
+}
+
+
+body {
+width: 100%;
+height: 100%;
+font-family: TTLakes-Regular, sans-serif;
+font-size: 16px;
+background-color: white;
+padding-left: 24px;
+}
+
+
+
+
+
+.fixed-menu {
+display: block;
+position: fixed;
+left: 0;
+top: 0;
+width: 320px;
+height: 100%;
+box-shadow: 20px 0 20px 0 #454F7E20;
+padding-left: 24px;
+}
+.header {
+    height: 80px;
+    display: flex;
+    direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+}
+.header-icon {
+margin-right: 20px;
+
+}
+.header-icon:nth-child(3){
+  margin-right: 24px;
+  margin-left: auto;
+
+}
+.main-menu {
+    display: block;
+ position: relative;
+ 
+ height: 100%;
+}
+.main-menu__list {
+    list-style: none;
+    padding: 0;
+}
+.main-menu__list li {
+ margin-bottom: 16px;
+ line-height: 35px;
+ vertical-align: middle;
+}
+.main-menu__list li:before {
+ content: '';
+    position: absolute;
+    left: -24px;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-radius: 0 4px 4px 0;
+    opacity: 0;
+}
+.main-menu__list a {
+ text-decoration: none;
+ color: black;
+}
+.main-menu__list li:hover::before{
+    opacity: 100%;
+    transition-duration: 0.3s;
+}
+.main-menu__list > li:hover a {
+ opacity: 70%;
+}
+.header-icon, .footer-social-icons {
+
+width: 40px;
+height: 40px;
+background-color: #FF3E79;
+border-radius: 50%;
+border: none;
+position: relative;
+}
+.footer {
+ display: block;
+ position: absolute;
+ left: 0px;
+ bottom: 110px;
+ background: linear-gradient( to top, white 0 90%, transparent 100%);
+
+}
+
+.footer-social-icons {
+margin-right: 16px;
+margin-bottom: 10px;
+display: inline-block;
+
+}
+.social-icons__call {
+    background-image: url("images/call.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.social-icons__chat {
+    background-image: url("images/chat.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.social-icons__profile {
+    background-image: url("images/profile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.footer-mail {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
+.footer-number {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.header-icon__close span {
+ display: block;
+ width: 25px;
+ height: 2px; 
+ background-color: rgb(119, 17, 17);
+}
+.header-icon__close span::after, .header-icon__close span::before {
+width: 2px;
+height: 15px;
+content:'';
+background-color: rgb(119, 17, 17);
+}
+.header-icon__close span::before {
+transform: translate(0, -24px)
+}
+.header-icon__close span::after {
+
+}
+
+.language button {
+    background: none;
+    border: none;
+    font-family: TTLakes-Regular, sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+.language button:hover {
+    color: #7E7E82;
+}
+

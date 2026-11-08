@@ -72,7 +72,7 @@ transform: translate(0, 5px);
   margin-left: auto;
 }
 .header-icon__search {
-background-image: url("img2/search.svg");
+background-image: url("../img2/search.svg");
 background-repeat: no-repeat; 
 background-position: 50% 50%;
 }
@@ -139,17 +139,17 @@ display: inline-block;
 
 }
 .social-icons__call {
-    background-image: url("images/call.svg");
+    background-image: url("../images/call.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .social-icons__chat {
-    background-image: url("images/chat.svg");
+    background-image: url("../images/chat.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .social-icons__profile {
-    background-image: url("images/profile.svg");
+    background-image: url("../images/profile.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }

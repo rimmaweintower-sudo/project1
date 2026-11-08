@@ -37,13 +37,46 @@ padding-left: 24px;
 }
 .header-icon {
 margin-right: 20px;
+}
+.header-icon__close span {
+ display: block;
+ width: 15px;
+ height: 2px; 
+ background-color: white;
+ transform: translate(2px);
+ transition: 0.3s ease;
+
+ 
+}
+.header-icon__close span::after, .header-icon__close span::before {
+display: block;
+width: 22px;
+height: 2px;
+content:'';
+background-color: white;
+transition: 0.3s ease;
+}
+.header-icon__close span::before {
+transform: translate(0, -7px);
 
 }
+.header-icon__close span::after {
+transform: translate(0, 5px);
+}
+.header-icon__close:hover span { background-color: transparent; }
+.header-icon__close:hover span::before { transform:rotate(45deg);}
+.header-icon__close:hover span::after {transform:translate(0, -1px) rotate(-45deg);}
+
 .header-icon:nth-child(3){
   margin-right: 24px;
   margin-left: auto;
-
 }
+.header-icon__search {
+background-image: url("img2/search.svg");
+background-repeat: no-repeat; 
+background-position: 50% 50%;
+}
+
 .main-menu {
     display: block;
  position: relative;
@@ -93,10 +126,11 @@ position: relative;
  display: block;
  position: absolute;
  left: 0px;
- bottom: 110px;
+ bottom: 95px;
  background: linear-gradient( to top, white 0 90%, transparent 100%);
-
+ padding-bottom: 30px;
 }
+
 
 .footer-social-icons {
 margin-right: 16px;
@@ -131,24 +165,6 @@ display: inline-block;
     margin: 0;
     margin-bottom: 40px;
 }
-.header-icon__close span {
- display: block;
- width: 25px;
- height: 2px; 
- background-color: rgb(119, 17, 17);
-}
-.header-icon__close span::after, .header-icon__close span::before {
-width: 2px;
-height: 15px;
-content:'';
-background-color: rgb(119, 17, 17);
-}
-.header-icon__close span::before {
-transform: translate(0, -24px)
-}
-.header-icon__close span::after {
-
-}
 
 .language button {
     background: none;
@@ -160,4 +176,4 @@ transform: translate(0, -24px)
 .language button:hover {
     color: #7E7E82;
 }
-
+.language_ru--active {color: #7E7E82;}

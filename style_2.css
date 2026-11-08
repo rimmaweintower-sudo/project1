@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TTLakes-Regular';   
-    src: url('../fonts/TTLakes-Regular.woff') format('woff');
+    src: url('fonts/TTLakes-Regular.woff') format('woff');
 }
 
 
@@ -139,17 +139,17 @@ display: inline-block;
 
 }
 .social-icons__call {
-    background-image: url("../images/call.svg");
+    background-image: url("images/call.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .social-icons__chat {
-    background-image: url("../images/chat.svg");
+    background-image: url("images/chat.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .social-icons__profile {
-    background-image: url("../images/profile.svg");
+    background-image: url("images/profile.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }

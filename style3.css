@@ -1,0 +1,124 @@
+@font-face {
+    font-family: TTLakes-Regular;
+    src: url(fonts/TTLakes-Regular.woff);
+}
+body {
+ width: 100%;
+ font-family: TTLakes-Regular;
+ 
+ text-transform: uppercase;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: -0.2px;
+ color: #7E7E82;
+ padding: 16px;
+ padding-right: 5px;
+ margin: 0;
+ background-color: #f0f0f0;
+}
+
+h1 {
+font-size: 16px;
+font-weight: 200px;
+margin: 0;
+display: inline-block;
+
+margin-bottom: 32px;
+}
+
+div.swiper {
+ mask-image: linear-gradient(to right, black 95%, transparent 100%);
+
+}
+
+ul.slider-list {
+ 
+ padding: 0;
+ padding-bottom: 16px;
+ position: relative;
+ margin: 0;
+ margin-bottom: 16px;
+ 
+
+
+}
+li.slider-list__item {
+background-color: white;
+border: 2px solid rgb(218, 217, 217);
+border-radius: 10px;;
+width: 240px;
+height: 72px;
+list-style: none;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+.slider-list__item img {
+width: 108px;
+height: 32px;
+margin-left: 16px;
+
+}
+.slider-list__arrow {
+display: inline-block;
+position: relative;
+height: 40px;
+width: 40px;
+border: 2px solid #FF3E79;
+border-radius: 50%;
+margin-right: 16px;
+}
+.slider-list__arrow::after {
+content: "";
+width: 8.5px;
+height: 8.5px;
+position: absolute;
+border-right: 2px solid #FF3E79;
+border-bottom: 2px solid #FF3E79; 
+left: 0;
+top: 0;
+transform:translate(125%, 140%) rotate(-45deg);
+
+}
+.swiper-pagination {
+bottom: 0px !important;
+
+}
+.swiper {
+ --swiper-pagination-color: #B5B6BC;
+ --swiper-pagination-bullet-inactive-color: #afafaf;
+--swiper-pagination-bullet-size: 12px;
+--swiper-pagination-bullet-height: 12px;
+--swiper-pagination-bullet-width: 12px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .expand-button {
+    height: 24px;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    border: none;
+    background-color: #F8F8F8;
+}
+.expand-button__icon{
+    height: 24px;
+}
+.expand-button__text {
+    font-family: TTLakes-Regular, sans-serif;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+}
+
+@media (min-width: 1120px) {
+    
+}

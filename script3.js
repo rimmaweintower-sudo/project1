@@ -1,11 +1,3 @@
-//const swiper = new Swiper('.swiper', {
-  //slidesPerView: 'auto',
-  //spaceBetween: 16,
-  //pagination: {
-    //el: '.swiper-pagination',
-   // clickable: true,
- // },
-//});
 
 const breakpoint = window.matchMedia('(max-width: 767px)');
 let swiper = null;

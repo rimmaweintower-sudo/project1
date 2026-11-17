@@ -32,7 +32,8 @@ let wrapper = document.getElementById('swiper');
 
 
 button.addEventListener('click', function() { 
-  const isExpanded = wrapper.classList.toggle('expanded');
-  buttonText.textContent = isExpanded ? 'Скрыть' : 'Показать все';
-  const btnIsExpanded = button.classList.toggle('expand-button--opened');
+  let isExpanded = wrapper.classList.toggle('expanded');
+  if (isExpanded) {buttonText.textContent = 'Скрыть'} 
+  else {buttonText.textContent = 'Показать все'};
+  let btnIsExpanded = button.classList.toggle('expand-button--opened');
 });

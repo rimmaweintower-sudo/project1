@@ -53,6 +53,8 @@ let close = function () {
     return menuOpened;    
     };
 button.addEventListener('click', function() { 
-    
-    if (menuOpened === false) { open() } else { close() } }
-)
+  let isExpanded = wrapper.classList.toggle('expanded');
+  if (isExpanded) {buttonText.textContent = 'Скрыть'} 
+  else {buttonText.textContent = 'Показать все'};
+  let btnIsExpanded = button.classList.toggle('expand-button--opened');
+});
